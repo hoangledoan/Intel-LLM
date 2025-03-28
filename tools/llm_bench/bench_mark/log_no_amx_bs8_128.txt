@@ -1,0 +1,47 @@
+<frozen importlib.util>:208: DeprecationWarning: The `openvino.runtime` module is deprecated and will be removed in the 2026.0 release. Please replace `openvino.runtime` with `openvino`.
+[ INFO ] ==SUCCESS FOUND==: use_case: text_gen, model_type: llama
+[ INFO ] OV Config={'INFERENCE_NUM_THREADS': 160, 'CACHE_DIR': ''}
+[ WARNING ] It is recommended to set the environment variable OMP_WAIT_POLICY to PASSIVE, so that OpenVINO inference can use all CPU resources without waiting.
+[ INFO ] The num_beams is 1, update Torch thread num from 80 to 16, avoid to use the CPU cores for OpenVINO inference.
+[ INFO ] Model path=models/llama-2-7b-chat-int8, openvino runtime version: 2025.0.0-17942-1f68be9f594-releases/2025/0
+[ INFO ] Selected OpenVINO GenAI for benchmarking
+[ INFO ] Pipeline initialization time: 1.08s
+[ INFO ] Numbeams: 1, benchmarking iter nums(exclude warm-up): 3, prompt nums: 1, prompt idx: [0]
+[ INFO ] [warm-up][P0] Input text: It's done, and submitted. You can play 'Survival of the Tastiest' on Android, and on the web. Playing on the web works, but you have to simulate multiple touch for table moving and that can be a bit confusing. There is a lot I'd like to talk about. I will go through every topic, insted of making the typical what went right/wrong list. Concept Working over the theme was probably one of the hardest tasks which I had to face. Originally, I had an idea of what kind of game I wanted to develop, gameplay wise
+[ WARNING ] Enabled input prompt permutations. It means that generated results may vary on different steps. If it is not expected, please specify --disable_prompt_permutation in your benchmarking command to disable this behavior
+[ INFO ] [warm-up] Batch_size=8, all input token size after padding: 128 * 8, all max_output_token_size: 128 * 8
+[ INFO ] [warm-up][P0] Input token size: 1024, Output size: 1024, Infer count: 128, Tokenization Time: 2.21ms, Detokenization Time: 1.47ms, Generation Time: 12.37s, Latency: 96.63 ms/8tokens
+[ INFO ] [warm-up][P0] First token latency: 36110.90 ms/8tokens, other tokens latency: 61.84 ms/8tokens, len of tokens: 128 * 8
+[ INFO ] [warm-up][P0] First infer latency: 4513.78 ms/infer, other infers latency: 61.32 ms/infer, inference count: 128
+[ INFO ] [warm-up][P0] Result MD5:['91284674a044bb3cc4caf0f7cc98ae65', 'c88a2ca320b6749a5f187d1ce5be27a9', '58b40a526ec81a35f98442b5b1fa6926', 'c88a2ca320b6749a5f187d1ce5be27a9', '0f0ff10bfa6fa71bd864d7eb873e67fe', '1a07093fbe3f3e31a2b42b138636367c', 'c88a2ca320b6749a5f187d1ce5be27a9', 'f62a84dfffc4b83656956bed5e850fd3']
+[ INFO ] [warm-up][P0] Generated: , but I had no idea how to make it work. I had to experiment a lot, and try different things, until I found the right balance. The game is a puzzle game, where you have to move tiles around to create a path for the food to reach the hungry monster. The game is meant to be easy to learn, but hard to master. The gameplay is simple, but it requires strategy to solve the puzzles. The game is also meant to be fun, and enjoyable, and I think I succeeded in that. Design The design of the game was a bit of a challenge, as
+[ INFO ] [warm-up][P0] start: 2025-03-10T01:04:06.938621, end: 2025-03-10T01:04:19.312545
+[ WARNING ] Enabled input prompt permutations. It means that generated results may vary on different steps. If it is not expected, please specify --disable_prompt_permutation in your benchmarking command to disable this behavior
+[ INFO ] [1] Batch_size=8, all input token size after padding: 128 * 8, all max_output_token_size: 128 * 8
+[ INFO ] [1][P0] Input token size: 1024, Output size: 1024, Infer count: 128, Tokenization Time: 1.24ms, Detokenization Time: 1.35ms, Generation Time: 9.37s, Latency: 73.19 ms/8tokens
+[ INFO ] [1][P0] First token latency: 13038.05 ms/8tokens, other tokens latency: 60.92 ms/8tokens, len of tokens: 128 * 8
+[ INFO ] [1][P0] First infer latency: 1629.65 ms/infer, other infers latency: 60.44 ms/infer, inference count: 128
+[ INFO ] [1][P0] Result MD5:['c427add916da78377ca59f3bac92fda1', 'b80a3eaa7776a61599a62a418b7ccd7f', 'c427add916da78377ca59f3bac92fda1', 'b80a3eaa7776a61599a62a418b7ccd7f', 'b80a3eaa7776a61599a62a418b7ccd7f', 'b80a3eaa7776a61599a62a418b7ccd7f', 'c427add916da78377ca59f3bac92fda1', 'c427add916da78377ca59f3bac92fda1']
+[ INFO ] [1][P0] Generated: , but I had no idea how to implement it. I had to do a lot of research, and experiment with different technologies, to find the right one for the job. I also had to learn a lot of new things, like how to use Unity, and how to program in C#. I had to learn how to use the Unity UI system, and how to create custom UI elements. I had to learn how to use the physics engine, and how to create realistic physics simulations. I had to learn how to use the animation system, and how to create realistic animations. I had to learn how to use
+[ INFO ] [1][P0] start: 2025-03-10T01:04:19.312976, end: 2025-03-10T01:04:28.685656
+[ WARNING ] Enabled input prompt permutations. It means that generated results may vary on different steps. If it is not expected, please specify --disable_prompt_permutation in your benchmarking command to disable this behavior
+[ INFO ] [2] Batch_size=8, all input token size after padding: 128 * 8, all max_output_token_size: 128 * 8
+[ INFO ] [2][P0] Input token size: 1024, Output size: 1024, Infer count: 128, Tokenization Time: 1.36ms, Detokenization Time: 1.37ms, Generation Time: 9.27s, Latency: 72.39 ms/8tokens
+[ INFO ] [2][P0] First token latency: 13191.83 ms/8tokens, other tokens latency: 59.97 ms/8tokens, len of tokens: 128 * 8
+[ INFO ] [2][P0] First infer latency: 1648.83 ms/infer, other infers latency: 59.52 ms/infer, inference count: 128
+[ INFO ] [2][P0] Result MD5:['f85b45325f41d5b0db064ac4d90653cf', 'f85b45325f41d5b0db064ac4d90653cf', 'f85b45325f41d5b0db064ac4d90653cf', '758df58f2565e9e328a6f56e1fb6b11b', '25cc36b81650dc2b4df6f23d3fc72fcd', 'a8f0e13be845a9d98019d100f7874002', 'cc2d6a9180f2c6462e4a9f136c204542', '25cc36b81650dc2b4df6f23d3fc72fcd']
+[ INFO ] [2][P0] Generated: , but I had no idea how to implement it. I had to research a lot, and try different approaches, until I found the right one. The game is a puzzle game, where you have to move pieces around to create a line of 3 or more of the same food. The game is meant to be easy to learn, but hard to master. The game is also meant to be funny, and have a bit of a twist at the end. The game is called 'Survival of the Tastiest', and it's a play on words, as it's a pun on the phrase
+[ INFO ] [2][P0] start: 2025-03-10T01:04:28.686184, end: 2025-03-10T01:04:37.956678
+[ WARNING ] Enabled input prompt permutations. It means that generated results may vary on different steps. If it is not expected, please specify --disable_prompt_permutation in your benchmarking command to disable this behavior
+[ INFO ] [3] Batch_size=8, all input token size after padding: 128 * 8, all max_output_token_size: 128 * 8
+[ INFO ] [3][P0] Input token size: 1024, Output size: 1024, Infer count: 128, Tokenization Time: 0.94ms, Detokenization Time: 1.31ms, Generation Time: 9.07s, Latency: 70.88 ms/8tokens
+[ INFO ] [3][P0] First token latency: 11907.20 ms/8tokens, other tokens latency: 59.71 ms/8tokens, len of tokens: 128 * 8
+[ INFO ] [3][P0] First infer latency: 1488.30 ms/infer, other infers latency: 59.23 ms/infer, inference count: 128
+[ INFO ] [3][P0] Result MD5:['d5762b80628e25917dae09152d697e8a', '8f31dc0594292a70e9bc0ae0cb4b05b7', 'b9f4d2a0200928833d7ac98e14c2172f', '6254559be3e4b7e5d1322c5d548f6c7f', 'ec5425f1a399eb61baffc113c15122ed', 'ecf0a38900b3c559c6edd527d7522a0b', 'ecf0a38900b3c559c6edd527d7522a0b', 'c46c14045c20d5a157ccbf2168575f0e']
+[ INFO ] [3][P0] Generated: , but I had no idea how to implement it. I had to do a lot of research on how to create a game like this, and I had to experiment a lot to find the right way to do it. The game is a puzzle game, where the player has to move pieces around to create a line of three or more of the same food item. The game has a lot of depth, and there are many different mechanics that make it interesting. For example, there are different types of food, and each one has its own unique abilities. There are also power-ups that can be collected to give the player
+[ INFO ] [3][P0] start: 2025-03-10T01:04:37.956997, end: 2025-03-10T01:04:47.033210
+[ INFO ] <<< Warm-up iteration is excluded. >>>
+[ INFO ] [Total] Iterations: 3
+[ INFO ] [Average] P[0] Input token size: 1024, 1st token latency: 12712.36 ms/8tokens, 2nd token latency: 60.20 ms/8tokens, 2nd tokens throughput: 132.89 tokens/s
+Total energy: 5668.99
+Power consumption: 566.899

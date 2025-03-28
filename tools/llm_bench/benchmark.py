@@ -17,6 +17,10 @@ import task.text_generation as bench_text
 import task.image_generation as bench_image
 import task.super_resolution_generation as bench_ldm_sr
 import task.speech_to_text_generation as bench_speech
+import json
+
+with open("prompt.json", "r") as f:
+    data = json.load(f)
 
 DEFAULT_TORCH_THREAD_NUMS = 16
 mem_consumption = MemConsumption()
@@ -38,6 +42,7 @@ def num_infer_count_type(x):
 
 def get_argprser():
     parser = argparse.ArgumentParser('LLM benchmarking tool', add_help=True, formatter_class=argparse.RawTextHelpFormatter)
+    parser.add_argument('--input_length', type= int, help="Length of input token")
     parser.add_argument('-m', '--model', help='model folder including IR files or Pytorch files', required=TabError)
     parser.add_argument('-d', '--device', default='cpu', help='inference device')
     parser.add_argument('-r', '--report', help='report csv')
@@ -155,6 +160,7 @@ def get_argprser():
     return parser.parse_args()
 
 
+
 CASE_TO_BENCH = {
     'text_gen': bench_text.run_text_generation_benchmark,
     'image_gen': bench_image.run_image_generation_benchmark,
@@ -174,6 +180,8 @@ def main():
         **logging_kwargs
     )
     args = get_argprser()
+
+    args.prompt = data["llama"][str(args.input_length)]
 
     if args.tokens_len is not None and not args.streaming:
         log.error("--tokens_len requires --streaming to be set.")

@@ -1,0 +1,45 @@
+<frozen importlib.util>:208: DeprecationWarning: The `openvino.runtime` module is deprecated and will be removed in the 2026.0 release. Please replace `openvino.runtime` with `openvino`.
+[ INFO ] ==SUCCESS FOUND==: use_case: text_gen, model_type: llama
+[ INFO ] OV Config={'INFERENCE_NUM_THREADS': 160, 'CACHE_DIR': ''}
+[ WARNING ] It is recommended to set the environment variable OMP_WAIT_POLICY to PASSIVE, so that OpenVINO inference can use all CPU resources without waiting.
+[ INFO ] The num_beams is 1, update Torch thread num from 80 to 16, avoid to use the CPU cores for OpenVINO inference.
+[ INFO ] Model path=models/llama-2-7b-chat-int8, openvino runtime version: 2025.0.0-17942-1f68be9f594-releases/2025/0
+[ INFO ] Selected OpenVINO GenAI for benchmarking
+[ INFO ] Pipeline initialization time: 1.10s
+[ INFO ] Numbeams: 1, benchmarking iter nums(exclude warm-up): 3, prompt nums: 1, prompt idx: [0]
+[ INFO ] [warm-up][P0] Input text: It's done, and submitted. You can play 'Survival of the Tastiest' on Android, and on the web. Playing on the web works, but you have to simulate multiple touch for table moving and that can be a bit confusing. There is a lot I'd like to talk about. I will go through every topic, insted of making the typical what went right/wrong list. Concept Working over the theme was probably one of the hardest tasks which I had to face. Originally, I had an idea of what kind of game I wanted to develop, gameplay wise
+[ WARNING ] Enabled input prompt permutations. It means that generated results may vary on different steps. If it is not expected, please specify --disable_prompt_permutation in your benchmarking command to disable this behavior
+[ INFO ] [warm-up][P0] Input token size: 128, Output size: 128, Infer count: 128, Tokenization Time: 1.30ms, Detokenization Time: 0.79ms, Generation Time: 9.06s, Latency: 70.77 ms/token
+[ INFO ] [warm-up][P0] First token latency: 2797.46 ms/token, other tokens latency: 49.30 ms/token, len of tokens: 128 * 1
+[ INFO ] [warm-up][P0] First infer latency: 2797.39 ms/infer, other infers latency: 49.12 ms/infer, inference count: 128
+[ INFO ] [warm-up][P0] Result MD5:['97eb7b2966ed527e7e1b123918c131b9']
+[ INFO ] [warm-up][P0] Generated: , but I had no idea how to make it work. I had to experiment a lot, and try different things, until I found the right balance. The game is a puzzle game, where you have to move tiles around to create a path for the food to reach the mouth. The game is meant to be easy to learn, but hard to master. The gameplay is simple, but it requires a lot of strategy to win. The game is also meant to be funny, and the artwork is meant to be humorous. The game is meant to be a light-hearted game, and I think I
+[ INFO ] [warm-up][P0] start: 2025-03-10T03:07:27.912289, end: 2025-03-10T03:07:36.974657
+[ WARNING ] Enabled input prompt permutations. It means that generated results may vary on different steps. If it is not expected, please specify --disable_prompt_permutation in your benchmarking command to disable this behavior
+[ INFO ] [1][P0] Input token size: 128, Output size: 128, Infer count: 128, Tokenization Time: 1.03ms, Detokenization Time: 0.65ms, Generation Time: 6.41s, Latency: 50.12 ms/token
+[ INFO ] [1][P0] First token latency: 112.70 ms/token, other tokens latency: 49.62 ms/token, len of tokens: 128 * 1
+[ INFO ] [1][P0] First infer latency: 112.62 ms/infer, other infers latency: 49.46 ms/infer, inference count: 128
+[ INFO ] [1][P0] Result MD5:['c85c178778c264971486761aafb49dbf']
+[ INFO ] [1][P0] Generated: , but I had no idea how to implement it. I had to do a lot of research on how to make a game like this, and I had to experiment a lot to find the right way to do it. I had to learn how to use Unity, and how to make a game with it. I had to learn how to make a game with a 2D side-scrolling perspective, and how to make the game feel smooth and responsive. I had to learn how to make the game look good, and how to make it visually appealing. I had to learn how to make the game sound good,
+[ INFO ] [1][P0] start: 2025-03-10T03:07:36.975071, end: 2025-03-10T03:07:43.393021
+[ WARNING ] Enabled input prompt permutations. It means that generated results may vary on different steps. If it is not expected, please specify --disable_prompt_permutation in your benchmarking command to disable this behavior
+[ INFO ] [2][P0] Input token size: 128, Output size: 128, Infer count: 128, Tokenization Time: 1.02ms, Detokenization Time: 0.99ms, Generation Time: 6.45s, Latency: 50.42 ms/token
+[ INFO ] [2][P0] First token latency: 104.14 ms/token, other tokens latency: 49.99 ms/token, len of tokens: 128 * 1
+[ INFO ] [2][P0] First infer latency: 104.06 ms/infer, other infers latency: 49.82 ms/infer, inference count: 128
+[ INFO ] [2][P0] Result MD5:['25cc36b81650dc2b4df6f23d3fc72fcd']
+[ INFO ] [2][P0] Generated: , but I had no idea how to implement it. I had to research a lot, and try different approaches, before I found the right one. The game is a puzzle game, where you have to move pieces around to create a line of three or more of the same food. The game is meant to be easy to learn, but hard to master. The game is also meant to be funny, and to make you laugh. The game is not meant to be a serious game, but a light-hearted one. The game is meant to be a game that you can play with your friends and family, and have
+[ INFO ] [2][P0] start: 2025-03-10T03:07:43.393404, end: 2025-03-10T03:07:49.850597
+[ WARNING ] Enabled input prompt permutations. It means that generated results may vary on different steps. If it is not expected, please specify --disable_prompt_permutation in your benchmarking command to disable this behavior
+[ INFO ] [3][P0] Input token size: 128, Output size: 128, Infer count: 128, Tokenization Time: 1.11ms, Detokenization Time: 0.84ms, Generation Time: 6.34s, Latency: 49.53 ms/token
+[ INFO ] [3][P0] First token latency: 125.34 ms/token, other tokens latency: 48.93 ms/token, len of tokens: 128 * 1
+[ INFO ] [3][P0] First infer latency: 125.25 ms/infer, other infers latency: 48.76 ms/infer, inference count: 128
+[ INFO ] [3][P0] Result MD5:['a72b8d738c0e6509cb4e02d02242c9ea']
+[ INFO ] [3][P0] Generated: , but I had no idea how to make it work. I had to experiment a lot, and try different things, until I found the right balance. The game is a puzzle game, where you have to move tiles to make a line of three or more of the same food. The game is meant to be easy to learn, but hard to master. The gameplay is simple, but it requires strategy to win. The game is also meant to be funny, and the food is meant to be silly. The game has a lot of different levels, and each level has a different theme. The game also has a
+[ INFO ] [3][P0] start: 2025-03-10T03:07:49.850982, end: 2025-03-10T03:07:56.193954
+[ INFO ] <<< Warm-up iteration is excluded. >>>
+[ INFO ] [Total] Iterations: 3
+[ INFO ] [Average] P[0] Input token size: 128, 1st token latency: 114.06 ms/token, 2nd token latency: 49.52 ms/token, 2nd tokens throughput: 20.20 tokens/s
+/home/hoang-std/openvino_distributed/openvino.genai/tools/llm_bench/energy.py:10: DtypeWarning: Columns (2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,88,89,90,91,96,97,98,99,104,105,106,107,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135) have mixed types. Specify dtype option on import or set low_memory=False.
+  df = pd.read_csv("/home/hoang-std/pcm/build/bin/int8_llama-2-7b-chat-hf.csv")
+Total energy: 3462.2300000000005
+Power consumption: 494.60428571428577

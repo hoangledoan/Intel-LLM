@@ -1,0 +1,68 @@
+<frozen importlib.util>:208: DeprecationWarning: The `openvino.runtime` module is deprecated and will be removed in the 2026.0 release. Please replace `openvino.runtime` with `openvino`.
+[ INFO ] ==SUCCESS FOUND==: use_case: text_gen, model_type: llama
+[ INFO ] OV Config={'INFERENCE_NUM_THREADS': 160, 'CACHE_DIR': ''}
+[ WARNING ] It is recommended to set the environment variable OMP_WAIT_POLICY to PASSIVE, so that OpenVINO inference can use all CPU resources without waiting.
+[ INFO ] The num_beams is 1, update Torch thread num from 80 to 16, avoid to use the CPU cores for OpenVINO inference.
+[ INFO ] Model path=models/llama-3-8b-int8, openvino runtime version: 2025.0.0-17942-1f68be9f594-releases/2025/0
+[ INFO ] Selected OpenVINO GenAI for benchmarking
+[ INFO ] Pipeline initialization time: 2.72s
+[ INFO ] Numbeams: 1, benchmarking iter nums(exclude warm-up): 3, prompt nums: 1, prompt idx: [0]
+[ INFO ] [warm-up][P0] Input text: It is done, and submitted. You can play 'Survival of the Tastiest' on Android, and on the web. Playing on the web works, but you have to simulate multiple touch for table moving and that can be a bit confusing. There is a lot I'd like to talk about. I will go through every topic, insted of making the typical what went right/wrong list. Concept Working over the theme was probably one of the hardest tasks which I had to face. Originally, I had an idea of what kind of game I wanted to develop, gameplay wise - something with a lot of enemies/actors, simple graphics, maybe set in space, controlled from a top-down view. I was confident that I could fit any theme around it. In the end, the problem with a theme like 'Evolution' in a game is that evolution is unassisted. It happens through several seemingly random mutations over time, with the most apt permutation surviving. This genetic car simulator is, in my opinion, a great example of actual evolution of a species facing a challenge. But is it a game? In a game, you need to control something to reach an objective
+[ WARNING ] Enabled input prompt permutations. It means that generated results may vary on different steps. If it is not expected, please specify --disable_prompt_permutation in your benchmarking command to disable this behavior
+[ INFO ] [warm-up] Batch_size=8, all input token size after padding: 240 * 8, all max_output_token_size: 128 * 8
+[ INFO ] [warm-up][P0] Input token size: 1920, Output size: 1024, Infer count: 128, Tokenization Time: 10.12ms, Detokenization Time: 1.25ms, Generation Time: 15.69s, Latency: 122.59 ms/8tokens
+[ INFO ] [warm-up][P0] First token latency: 50063.93 ms/8tokens, other tokens latency: 74.26 ms/8tokens, len of tokens: 128 * 8
+[ INFO ] [warm-up][P0] First infer latency: 6257.75 ms/infer, other infers latency: 72.74 ms/infer, inference count: 128
+[ INFO ] [warm-up][P0] Result MD5:['7a51c6f4953bc4b38c29dcd0ae2c8754', '66c057f271b887a7701f0427e8eaf92e', 'cced6c3a586a5c9b2bcb0065b1e591d8', '5e0c5fb7000198bb4b031418fa845a1b', '7a51c6f4953bc4b38c29dcd0ae2c8754', '7a51c6f4953bc4b38c29dcd0ae2c8754', 'dad7aec85ceafaadd4f6f0d9363d1e48', '66c057f271b887a7701f0427e8eaf92e']
+[ INFO ] [warm-up][P0] Generated: . You need to have a goal. You need to have a challenge. You need to have a reward. You need to have a way to fail. You need to have a way to succeed. You need to have a way to progress. You need to have a way to go back. You need to have a way to restart. You need to have a way to pause. You need to have a way to save. You need to have a way to load. You need to have a way to quit. You need to have a way to cheat. You need to have a way to win. You need to have a way
+[ INFO ] [warm-up][P0] start: 2025-03-23T01:22:36.039011, end: 2025-03-23T01:22:51.747520
+[ WARNING ] Enabled input prompt permutations. It means that generated results may vary on different steps. If it is not expected, please specify --disable_prompt_permutation in your benchmarking command to disable this behavior
+[ INFO ] [1] Batch_size=8, all input token size after padding: 240 * 8, all max_output_token_size: 128 * 8
+[ INFO ] [1][P0] Input token size: 1920, Output size: 1024, Infer count: 128, Tokenization Time: 4.57ms, Detokenization Time: 0.88ms, Generation Time: 10.28s, Latency: 80.30 ms/8tokens
+[ INFO ] [1][P0] First token latency: 7132.16 ms/8tokens, other tokens latency: 73.90 ms/8tokens, len of tokens: 128 * 8
+[ INFO ] [1][P0] First infer latency: 891.41 ms/infer, other infers latency: 72.69 ms/infer, inference count: 128
+[ INFO ] [1][P0] Result MD5:['89e8111277ab7e5ef4a5ce404e9376dc', 'cbf7413282ed766af948e715acfb2766', '89e8111277ab7e5ef4a5ce404e9376dc', '5e0c5fb7000198bb4b031418fa845a1b', '566f9ab2233be5f8e5f24a7d083e9344', '89e8111277ab7e5ef4a5ce404e9376dc', '89e8111277ab7e5ef4a5ce404e9376dc', '89e8111277ab7e5ef4a5ce404e9376dc']
+[ INFO ] [1][P0] Generated: . In this case, the objective is to survive. But how do you control evolution? You can't. You can only control the environment, and hope that the species will adapt. This is not a game. It is a simulation. I had to think of something else. I had to think of something that would be a game, but would also fit the theme. I had to think of something that would be a game, but would also fit the theme. I had to think of something that would be a game, but would also fit the theme. I had to think of something that would be a game, but would also
+[ INFO ] [1][P0] start: 2025-03-23T01:22:51.748215, end: 2025-03-23T01:23:02.035115
+[ WARNING ] Enabled input prompt permutations. It means that generated results may vary on different steps. If it is not expected, please specify --disable_prompt_permutation in your benchmarking command to disable this behavior
+[ INFO ] [2] Batch_size=8, all input token size after padding: 240 * 8, all max_output_token_size: 128 * 8
+[ INFO ] [2][P0] Input token size: 1920, Output size: 1024, Infer count: 128, Tokenization Time: 4.15ms, Detokenization Time: 0.78ms, Generation Time: 10.90s, Latency: 85.13 ms/8tokens
+[ INFO ] [2][P0] First token latency: 11820.80 ms/8tokens, other tokens latency: 74.16 ms/8tokens, len of tokens: 128 * 8
+[ INFO ] [2][P0] First infer latency: 1477.48 ms/infer, other infers latency: 73.06 ms/infer, inference count: 128
+[ INFO ] [2][P0] Result MD5:['7a51c6f4953bc4b38c29dcd0ae2c8754', '342dca3a6be9c3d0241606269a990d60', '342dca3a6be9c3d0241606269a990d60', '7a51c6f4953bc4b38c29dcd0ae2c8754', '7a51c6f4953bc4b38c29dcd0ae2c8754', '342dca3a6be9c3d0241606269a990d60', '7a51c6f4953bc4b38c29dcd0ae2c8754', '7a51c6f4953bc4b38c29dcd0ae2c8754']
+[ INFO ] [2][P0] Generated: . You need to have a goal. You need to have a challenge. You need to have a reward. You need to have a way to fail. You need to have a way to succeed. You need to have a way to progress. You need to have a way to go back. You need to have a way to restart. You need to have a way to pause. You need to have a way to save. You need to have a way to load. You need to have a way to quit. You need to have a way to cheat. You need to have a way to win. You need to have a way
+[ INFO ] [2][P0] start: 2025-03-23T01:23:02.035411, end: 2025-03-23T01:23:12.938899
+[ WARNING ] Enabled input prompt permutations. It means that generated results may vary on different steps. If it is not expected, please specify --disable_prompt_permutation in your benchmarking command to disable this behavior
+[ INFO ] [3] Batch_size=8, all input token size after padding: 240 * 8, all max_output_token_size: 128 * 8
+[ INFO ] [3][P0] Input token size: 1920, Output size: 1024, Infer count: 128, Tokenization Time: 4.31ms, Detokenization Time: 0.84ms, Generation Time: 11.04s, Latency: 86.22 ms/8tokens
+[ INFO ] [3][P0] First token latency: 11833.16 ms/8tokens, other tokens latency: 75.24 ms/8tokens, len of tokens: 128 * 8
+[ INFO ] [3][P0] First infer latency: 1479.04 ms/infer, other infers latency: 73.87 ms/infer, inference count: 128
+[ INFO ] [3][P0] Result MD5:['7a51c6f4953bc4b38c29dcd0ae2c8754', '7a51c6f4953bc4b38c29dcd0ae2c8754', '7a51c6f4953bc4b38c29dcd0ae2c8754', '7a51c6f4953bc4b38c29dcd0ae2c8754', '9a411f3b6547693303937446d5267751', '342dca3a6be9c3d0241606269a990d60', '7a51c6f4953bc4b38c29dcd0ae2c8754', '342dca3a6be9c3d0241606269a990d60']
+[ INFO ] [3][P0] Generated: . You need to have a goal. You need to have a challenge. You need to have a reward. You need to have a way to fail. You need to have a way to succeed. You need to have a way to progress. You need to have a way to go back. You need to have a way to restart. You need to have a way to pause. You need to have a way to save. You need to have a way to load. You need to have a way to quit. You need to have a way to cheat. You need to have a way to win. You need to have a way
+[ INFO ] [3][P0] start: 2025-03-23T01:23:12.939236, end: 2025-03-23T01:23:23.983104
+[ INFO ] <<< Warm-up iteration is excluded. >>>
+[ INFO ] [Total] Iterations: 3
+[ INFO ] [Average] P[0] Input token size: 1920, 1st token latency: 10262.04 ms/8tokens, 2nd token latency: 74.43 ms/8tokens, 2nd tokens throughput: 107.48 tokens/s
+Traceback (most recent call last):
+  File "/home/hoang-std/openvino_distributed/openvino.genai/tools/llm_bench/energy.py", line 10, in <module>
+    df = pd.read_csv("/home/hoang-std/pcm/build/bin/int8_llama-2-7b-chat-hf.csv")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hoang-std/openvino_distributed/venv_ov_distributed/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hoang-std/openvino_distributed/venv_ov_distributed/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 626, in _read
+    return parser.read(nrows)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/hoang-std/openvino_distributed/venv_ov_distributed/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1923, in read
+    ) = self._engine.read(  # type: ignore[attr-defined]
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hoang-std/openvino_distributed/venv_ov_distributed/lib/python3.12/site-packages/pandas/io/parsers/c_parser_wrapper.py", line 234, in read
+    chunks = self._reader.read_low_memory(nrows)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "parsers.pyx", line 838, in pandas._libs.parsers.TextReader.read_low_memory
+  File "parsers.pyx", line 905, in pandas._libs.parsers.TextReader._read_rows
+  File "parsers.pyx", line 874, in pandas._libs.parsers.TextReader._tokenize_rows
+  File "parsers.pyx", line 891, in pandas._libs.parsers.TextReader._check_tokenize_status
+  File "parsers.pyx", line 2061, in pandas._libs.parsers.raise_parser_error
+pandas.errors.ParserError: Error tokenizing data. C error: Expected 137 fields in line 8796, saw 138
+

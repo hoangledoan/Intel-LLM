@@ -1,0 +1,64 @@
+<frozen importlib.util>:208: DeprecationWarning: The `openvino.runtime` module is deprecated and will be removed in the 2026.0 release. Please replace `openvino.runtime` with `openvino`.
+[ INFO ] ==SUCCESS FOUND==: use_case: text_gen, model_type: llama
+[ INFO ] OV Config={'INFERENCE_NUM_THREADS': 160, 'CACHE_DIR': ''}
+[ WARNING ] It is recommended to set the environment variable OMP_WAIT_POLICY to PASSIVE, so that OpenVINO inference can use all CPU resources without waiting.
+[ INFO ] The num_beams is 1, update Torch thread num from 80 to 16, avoid to use the CPU cores for OpenVINO inference.
+[ INFO ] Model path=models/llama-3-8b-int4, openvino runtime version: 2025.0.0-17942-1f68be9f594-releases/2025/0
+[ INFO ] Selected OpenVINO GenAI for benchmarking
+[ INFO ] Pipeline initialization time: 3.83s
+[ INFO ] Numbeams: 1, benchmarking iter nums(exclude warm-up): 3, prompt nums: 1, prompt idx: [0]
+[ INFO ] [warm-up][P0] Input text: It's done, and submitted. You can play 'Survival of the Tastiest' on Android, and on the web. Playing on the web works, but you have to simulate multiple touch for table moving and that can be a bit confusing. There is a lot I'd like to talk about. I will go through every topic, insted of making the typical what went right/wrong list. Concept Working over the theme was probably one of the hardest tasks which I had to face. Originally, I had an idea of what kind of game I wanted to develop, gameplay wise
+[ WARNING ] Enabled input prompt permutations. It means that generated results may vary on different steps. If it is not expected, please specify --disable_prompt_permutation in your benchmarking command to disable this behavior
+[ INFO ] [warm-up][P0] Input token size: 119, Output size: 128, Infer count: 128, Tokenization Time: 4.91ms, Detokenization Time: 1.34ms, Generation Time: 9.13s, Latency: 71.36 ms/token
+[ INFO ] [warm-up][P0] First token latency: 3519.34 ms/token, other tokens latency: 44.21 ms/token, len of tokens: 128 * 1
+[ INFO ] [warm-up][P0] First infer latency: 3519.12 ms/infer, other infers latency: 43.89 ms/infer, inference count: 128
+[ INFO ] [warm-up][P0] Result MD5:['d3deebe59b935f7ee07edb281aa1ad4d']
+[ INFO ] [warm-up][P0] Generated: . I wanted to make a game where you have to survive, and you have to do it by eating. I wanted to make a game where you have to eat, and you have to do it by surviving. I wanted to make a game where you have to survive, and you have to do it by eating. I wanted to make a game where you have to eat, and you have to do it by surviving. I wanted to make a game where you have to survive, and you have to do it by eating. I wanted to make a game where you have to eat, and you have to do it by surviving. I
+[ INFO ] [warm-up][P0] start: 2025-03-23T01:57:51.720741, end: 2025-03-23T01:58:00.870211
+[ WARNING ] Enabled input prompt permutations. It means that generated results may vary on different steps. If it is not expected, please specify --disable_prompt_permutation in your benchmarking command to disable this behavior
+[ INFO ] [1][P0] Input token size: 119, Output size: 128, Infer count: 128, Tokenization Time: 2.17ms, Detokenization Time: 0.78ms, Generation Time: 5.82s, Latency: 45.44 ms/token
+[ INFO ] [1][P0] First token latency: 203.25 ms/token, other tokens latency: 44.20 ms/token, len of tokens: 128 * 1
+[ INFO ] [1][P0] First infer latency: 203.18 ms/infer, other infers latency: 43.89 ms/infer, inference count: 128
+[ INFO ] [1][P0] Result MD5:['8e6dbd00760e95b4a12ae702817e0152']
+[ INFO ] [1][P0] Generated: . I wanted to make a game where you have to survive as long as possible, and the longer you survive, the more points you get. I also wanted to make a game where you have to survive as long as possible, and the longer you survive, the more points you get. I wanted to make a game where you have to survive as long as possible, and the longer you survive, the more points you get. I wanted to make a game where you have to survive as long as possible, and the longer you survive, the more points you get. I wanted to make a game where you have to survive as long as
+[ INFO ] [1][P0] start: 2025-03-23T01:58:00.870699, end: 2025-03-23T01:58:06.691122
+[ WARNING ] Enabled input prompt permutations. It means that generated results may vary on different steps. If it is not expected, please specify --disable_prompt_permutation in your benchmarking command to disable this behavior
+[ INFO ] [2][P0] Input token size: 119, Output size: 128, Infer count: 128, Tokenization Time: 1.06ms, Detokenization Time: 0.74ms, Generation Time: 6.01s, Latency: 46.93 ms/token
+[ INFO ] [2][P0] First token latency: 201.63 ms/token, other tokens latency: 45.70 ms/token, len of tokens: 128 * 1
+[ INFO ] [2][P0] First infer latency: 201.58 ms/infer, other infers latency: 45.41 ms/infer, inference count: 128
+[ INFO ] [2][P0] Result MD5:['899740a2c5eddee8fd1f8354f266cd13']
+[ INFO ] [2][P0] Generated: . I wanted to make a game where you have to survive, and you can do that by eating. I wanted to make a game where you have to eat to survive, and you can do that by eating. I wanted to make a game where you have to eat to survive, and you can do that by eating. I wanted to make a game where you have to eat to survive, and you can do that by eating. I wanted to make a game where you have to eat to survive, and you can do that by eating. I wanted to make a game where you have to eat to survive, and you can do that
+[ INFO ] [2][P0] start: 2025-03-23T01:58:06.691406, end: 2025-03-23T01:58:12.700462
+[ WARNING ] Enabled input prompt permutations. It means that generated results may vary on different steps. If it is not expected, please specify --disable_prompt_permutation in your benchmarking command to disable this behavior
+[ INFO ] [3][P0] Input token size: 119, Output size: 128, Infer count: 128, Tokenization Time: 1.01ms, Detokenization Time: 0.65ms, Generation Time: 6.03s, Latency: 47.13 ms/token
+[ INFO ] [3][P0] First token latency: 226.39 ms/token, other tokens latency: 45.71 ms/token, len of tokens: 128 * 1
+[ INFO ] [3][P0] First infer latency: 226.31 ms/infer, other infers latency: 45.41 ms/infer, inference count: 128
+[ INFO ] [3][P0] Result MD5:['e4d79dc955223d364e9d535a0b3679e2']
+[ INFO ] [3][P0] Generated: . I wanted to make a game where you have to survive, and you have to do it by eating. I wanted to make a game where you have to eat, and you have to do it by surviving. I wanted to make a game where you have to eat, and you have to do it by surviving. I wanted to make a game where you have to eat, and you have to do it by surviving. I wanted to make a game where you have to eat, and you have to do it by surviving. I wanted to make a game where you have to eat, and you have to do it by surviving. I
+[ INFO ] [3][P0] start: 2025-03-23T01:58:12.700747, end: 2025-03-23T01:58:18.735891
+[ INFO ] <<< Warm-up iteration is excluded. >>>
+[ INFO ] [Total] Iterations: 3
+[ INFO ] [Average] P[0] Input token size: 119, 1st token latency: 210.43 ms/token, 2nd token latency: 45.20 ms/token, 2nd tokens throughput: 22.12 tokens/s
+Traceback (most recent call last):
+  File "/home/hoang-std/openvino_distributed/openvino.genai/tools/llm_bench/energy.py", line 10, in <module>
+    df = pd.read_csv("/home/hoang-std/pcm/build/bin/int8_llama-2-7b-chat-hf.csv")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hoang-std/openvino_distributed/venv_ov_distributed/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hoang-std/openvino_distributed/venv_ov_distributed/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 626, in _read
+    return parser.read(nrows)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/hoang-std/openvino_distributed/venv_ov_distributed/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1923, in read
+    ) = self._engine.read(  # type: ignore[attr-defined]
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hoang-std/openvino_distributed/venv_ov_distributed/lib/python3.12/site-packages/pandas/io/parsers/c_parser_wrapper.py", line 234, in read
+    chunks = self._reader.read_low_memory(nrows)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "parsers.pyx", line 838, in pandas._libs.parsers.TextReader.read_low_memory
+  File "parsers.pyx", line 905, in pandas._libs.parsers.TextReader._read_rows
+  File "parsers.pyx", line 874, in pandas._libs.parsers.TextReader._tokenize_rows
+  File "parsers.pyx", line 891, in pandas._libs.parsers.TextReader._check_tokenize_status
+  File "parsers.pyx", line 2061, in pandas._libs.parsers.raise_parser_error
+pandas.errors.ParserError: Error tokenizing data. C error: Expected 137 fields in line 10880, saw 166
+

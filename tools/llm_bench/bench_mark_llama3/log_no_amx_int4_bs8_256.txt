@@ -1,0 +1,49 @@
+<frozen importlib.util>:208: DeprecationWarning: The `openvino.runtime` module is deprecated and will be removed in the 2026.0 release. Please replace `openvino.runtime` with `openvino`.
+[ INFO ] ==SUCCESS FOUND==: use_case: text_gen, model_type: llama
+[ INFO ] OV Config={'INFERENCE_NUM_THREADS': 160, 'CACHE_DIR': ''}
+[ WARNING ] It is recommended to set the environment variable OMP_WAIT_POLICY to PASSIVE, so that OpenVINO inference can use all CPU resources without waiting.
+[ INFO ] The num_beams is 1, update Torch thread num from 80 to 16, avoid to use the CPU cores for OpenVINO inference.
+[ INFO ] Model path=models/llama-3-8b-int4, openvino runtime version: 2025.0.0-17942-1f68be9f594-releases/2025/0
+[ INFO ] Selected OpenVINO GenAI for benchmarking
+[ INFO ] Pipeline initialization time: 2.90s
+[ INFO ] Numbeams: 1, benchmarking iter nums(exclude warm-up): 3, prompt nums: 1, prompt idx: [0]
+[ INFO ] [warm-up][P0] Input text: It is done, and submitted. You can play 'Survival of the Tastiest' on Android, and on the web. Playing on the web works, but you have to simulate multiple touch for table moving and that can be a bit confusing. There is a lot I'd like to talk about. I will go through every topic, insted of making the typical what went right/wrong list. Concept Working over the theme was probably one of the hardest tasks which I had to face. Originally, I had an idea of what kind of game I wanted to develop, gameplay wise - something with a lot of enemies/actors, simple graphics, maybe set in space, controlled from a top-down view. I was confident that I could fit any theme around it. In the end, the problem with a theme like 'Evolution' in a game is that evolution is unassisted. It happens through several seemingly random mutations over time, with the most apt permutation surviving. This genetic car simulator is, in my opinion, a great example of actual evolution of a species facing a challenge. But is it a game? In a game, you need to control something to reach an objective
+[ WARNING ] Enabled input prompt permutations. It means that generated results may vary on different steps. If it is not expected, please specify --disable_prompt_permutation in your benchmarking command to disable this behavior
+[ INFO ] [warm-up] Batch_size=8, all input token size after padding: 240 * 8, all max_output_token_size: 128 * 8
+[ INFO ] [warm-up][P0] Input token size: 1920, Output size: 1024, Infer count: 128, Tokenization Time: 7.28ms, Detokenization Time: 0.92ms, Generation Time: 11.70s, Latency: 91.40 ms/8tokens
+[ INFO ] [warm-up][P0] First token latency: 39493.48 ms/8tokens, other tokens latency: 53.23 ms/8tokens, len of tokens: 128 * 8
+[ INFO ] [warm-up][P0] First infer latency: 4936.56 ms/infer, other infers latency: 52.00 ms/infer, inference count: 128
+[ INFO ] [warm-up][P0] Result MD5:['20e81fa089757510b1695394068069c9', '20e81fa089757510b1695394068069c9', '20e81fa089757510b1695394068069c9', '6ad2febdf9817a78f84bbd133e8926fd', '20e81fa089757510b1695394068069c9', '20e81fa089757510b1695394068069c9', '20e81fa089757510b1695394068069c9', '20e81fa089757510b1695394068069c9']
+[ INFO ] [warm-up][P0] Generated: . In this case, the objective is to survive. But how do you control evolution? You can't. You can only observe it. And that's not a game. I had to think of something else. I had to think of something that would be a game, but would also be a good fit for the theme. I had to think of something that would be a game, but would also be a good fit for the theme. I had to think of something that would be a game, but would also be a good fit for the theme. I had to think of something that would be a game, but would also be
+[ INFO ] [warm-up][P0] start: 2025-03-23T00:43:30.957356, end: 2025-03-23T00:43:42.666973
+[ WARNING ] Enabled input prompt permutations. It means that generated results may vary on different steps. If it is not expected, please specify --disable_prompt_permutation in your benchmarking command to disable this behavior
+[ INFO ] [1] Batch_size=8, all input token size after padding: 240 * 8, all max_output_token_size: 128 * 8
+[ INFO ] [1][P0] Input token size: 1920, Output size: 1024, Infer count: 128, Tokenization Time: 4.10ms, Detokenization Time: 0.96ms, Generation Time: 9.49s, Latency: 74.11 ms/8tokens
+[ INFO ] [1][P0] First token latency: 19637.28 ms/8tokens, other tokens latency: 55.35 ms/8tokens, len of tokens: 128 * 8
+[ INFO ] [1][P0] First infer latency: 2454.55 ms/infer, other infers latency: 54.24 ms/infer, inference count: 128
+[ INFO ] [1][P0] Result MD5:['20e81fa089757510b1695394068069c9', '20e81fa089757510b1695394068069c9', '20e81fa089757510b1695394068069c9', '5828d0e1456f1c13eacfc8644f9faf51', '20e81fa089757510b1695394068069c9', '20e81fa089757510b1695394068069c9', '20e81fa089757510b1695394068069c9', '20e81fa089757510b1695394068069c9']
+[ INFO ] [1][P0] Generated: . In this case, the objective is to survive. But how do you control evolution? You can't. You can only observe it. And that's not a game. I had to think of something else. I had to think of something that would be a game, but would also be a good fit for the theme. I had to think of something that would be a game, but would also be a good fit for the theme. I had to think of something that would be a game, but would also be a good fit for the theme. I had to think of something that would be a game, but would also be
+[ INFO ] [1][P0] start: 2025-03-23T00:43:42.667365, end: 2025-03-23T00:43:52.159371
+[ WARNING ] Enabled input prompt permutations. It means that generated results may vary on different steps. If it is not expected, please specify --disable_prompt_permutation in your benchmarking command to disable this behavior
+[ INFO ] [2] Batch_size=8, all input token size after padding: 240 * 8, all max_output_token_size: 128 * 8
+[ INFO ] [2][P0] Input token size: 1920, Output size: 1024, Infer count: 128, Tokenization Time: 4.87ms, Detokenization Time: 0.91ms, Generation Time: 9.85s, Latency: 76.92 ms/8tokens
+[ INFO ] [2][P0] First token latency: 19542.00 ms/8tokens, other tokens latency: 58.27 ms/8tokens, len of tokens: 128 * 8
+[ INFO ] [2][P0] First infer latency: 2442.64 ms/infer, other infers latency: 57.14 ms/infer, inference count: 128
+[ INFO ] [2][P0] Result MD5:['9e31823099ce16600d5dd71a73eb4131', '9e31823099ce16600d5dd71a73eb4131', '1447cb647aaeeca1185acbda874f9c24', '9e31823099ce16600d5dd71a73eb4131', '9e31823099ce16600d5dd71a73eb4131', 'e1adaf809e814026ddca2c21bf432e3f', '9e31823099ce16600d5dd71a73eb4131', '9e31823099ce16600d5dd71a73eb4131']
+[ INFO ] [2][P0] Generated: . In this case, the objective is to survive. The player is not in control of the species, but of the environment. The player is not in control of the species, but of the environment. The player is not in control of the species, but of the environment. The player is not in control of the species, but of the environment. The player is not in control of the species, but of the environment. The player is not in control of the species, but of the environment. The player is not in control of the species, but of the environment. The player is not in control of the species, but of
+[ INFO ] [2][P0] start: 2025-03-23T00:43:52.159706, end: 2025-03-23T00:44:02.012607
+[ WARNING ] Enabled input prompt permutations. It means that generated results may vary on different steps. If it is not expected, please specify --disable_prompt_permutation in your benchmarking command to disable this behavior
+[ INFO ] [3] Batch_size=8, all input token size after padding: 240 * 8, all max_output_token_size: 128 * 8
+[ INFO ] [3][P0] Input token size: 1920, Output size: 1024, Infer count: 128, Tokenization Time: 4.50ms, Detokenization Time: 0.79ms, Generation Time: 9.05s, Latency: 70.74 ms/8tokens
+[ INFO ] [3][P0] First token latency: 19485.93 ms/8tokens, other tokens latency: 52.10 ms/8tokens, len of tokens: 128 * 8
+[ INFO ] [3][P0] First infer latency: 2435.58 ms/infer, other infers latency: 50.97 ms/infer, inference count: 128
+[ INFO ] [3][P0] Result MD5:['20e81fa089757510b1695394068069c9', '20e81fa089757510b1695394068069c9', '20e81fa089757510b1695394068069c9', '20e81fa089757510b1695394068069c9', '37d7c030b61b6e95ce0adb901a423373', 'ca0182620f5679854f1d31cd971275d3', '20e81fa089757510b1695394068069c9', '37d7c030b61b6e95ce0adb901a423373']
+[ INFO ] [3][P0] Generated: . In this case, the objective is to survive. But how do you control evolution? You can't. You can only observe it. And that's not a game. I had to think of something else. I had to think of something that would be a game, but would also be a good fit for the theme. I had to think of something that would be a game, but would also be a good fit for the theme. I had to think of something that would be a game, but would also be a good fit for the theme. I had to think of something that would be a game, but would also be
+[ INFO ] [3][P0] start: 2025-03-23T00:44:02.012951, end: 2025-03-23T00:44:11.074105
+[ INFO ] <<< Warm-up iteration is excluded. >>>
+[ INFO ] [Total] Iterations: 3
+[ INFO ] [Average] P[0] Input token size: 1920, 1st token latency: 19555.07 ms/8tokens, 2nd token latency: 55.24 ms/8tokens, 2nd tokens throughput: 144.82 tokens/s
+/home/hoang-std/openvino_distributed/openvino.genai/tools/llm_bench/energy.py:10: DtypeWarning: Columns (2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,88,89,90,91,96,97,98,99,104,105,106,107,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135) have mixed types. Specify dtype option on import or set low_memory=False.
+  df = pd.read_csv("/home/hoang-std/pcm/build/bin/int8_llama-2-7b-chat-hf.csv")
+Total energy: 10133.02
+Power consumption: 562.9455555555555

@@ -1,0 +1,45 @@
+<frozen importlib.util>:208: DeprecationWarning: The `openvino.runtime` module is deprecated and will be removed in the 2026.0 release. Please replace `openvino.runtime` with `openvino`.
+[ INFO ] ==SUCCESS FOUND==: use_case: text_gen, model_type: llama
+[ INFO ] OV Config={'INFERENCE_NUM_THREADS': 160, 'CACHE_DIR': ''}
+[ WARNING ] It is recommended to set the environment variable OMP_WAIT_POLICY to PASSIVE, so that OpenVINO inference can use all CPU resources without waiting.
+[ INFO ] The num_beams is 1, update Torch thread num from 80 to 16, avoid to use the CPU cores for OpenVINO inference.
+[ INFO ] Model path=models/llama-2-7b-chat-int4, openvino runtime version: 2025.0.0-17942-1f68be9f594-releases/2025/0
+[ INFO ] Selected OpenVINO GenAI for benchmarking
+[ INFO ] Pipeline initialization time: 1.56s
+[ INFO ] Numbeams: 1, benchmarking iter nums(exclude warm-up): 3, prompt nums: 1, prompt idx: [0]
+[ INFO ] [warm-up][P0] Input text: It's done, and submitted. You can play 'Survival of the Tastiest' on Android, and on the web. Playing on the web works, but you have to simulate multiple touch for table moving and that can be a bit confusing. There is a lot I'd like to talk about. I will go through every topic, insted of making the typical what went right/wrong list. Concept Working over the theme was probably one of the hardest tasks which I had to face. Originally, I had an idea of what kind of game I wanted to develop, gameplay wise
+[ WARNING ] Enabled input prompt permutations. It means that generated results may vary on different steps. If it is not expected, please specify --disable_prompt_permutation in your benchmarking command to disable this behavior
+[ INFO ] [warm-up][P0] Input token size: 128, Output size: 128, Infer count: 128, Tokenization Time: 3.71ms, Detokenization Time: 0.84ms, Generation Time: 6.77s, Latency: 52.86 ms/token
+[ INFO ] [warm-up][P0] First token latency: 1914.20 ms/token, other tokens latency: 38.20 ms/token, len of tokens: 128 * 1
+[ INFO ] [warm-up][P0] First infer latency: 1914.13 ms/infer, other infers latency: 38.01 ms/infer, inference count: 128
+[ INFO ] [warm-up][P0] Result MD5:['4b8c9a9fecf17cfa716194417da911af']
+[ INFO ] [warm-up][P0] Generated: , but when it came to the theme, I was stuck. I had to think of something that would be unique, and that would make the game stand out. I wanted to make a game that would be different from all the other games out there, and that's when I came up with the idea of a food-based survival game. The idea of surviving in a world where food is the only thing that matters, and where you have to fight to survive, was something that I found interesting. The gameplay mechanics were easy to come up with, but the theme was something that I had to work on
+[ INFO ] [warm-up][P0] start: 2025-03-10T03:24:16.722320, end: 2025-03-10T03:24:23.496041
+[ WARNING ] Enabled input prompt permutations. It means that generated results may vary on different steps. If it is not expected, please specify --disable_prompt_permutation in your benchmarking command to disable this behavior
+[ INFO ] [1][P0] Input token size: 128, Output size: 128, Infer count: 128, Tokenization Time: 0.97ms, Detokenization Time: 0.78ms, Generation Time: 5.16s, Latency: 40.33 ms/token
+[ INFO ] [1][P0] First token latency: 102.78 ms/token, other tokens latency: 39.84 ms/token, len of tokens: 128 * 1
+[ INFO ] [1][P0] First infer latency: 102.69 ms/infer, other infers latency: 39.66 ms/infer, inference count: 128
+[ INFO ] [1][P0] Result MD5:['b1be02220234eded087f93c607d55a90']
+[ INFO ] [1][P0] Generated: . However, as I started to work on it, I realized that the theme was not as clear cut as I thought it was. I had to go through a lot of iterations of the gameplay mechanics, and the theme, to make sure that it was something that I was passionate about, and that it was something that would be fun to play. Gameplay Mechanics The gameplay mechanics were a bit tricky to get right. I wanted to make sure that the game was easy to learn, but hard to master. I also wanted to make sure that the game was fun to play, and that it had a good
+[ INFO ] [1][P0] start: 2025-03-10T03:24:23.496522, end: 2025-03-10T03:24:28.662326
+[ WARNING ] Enabled input prompt permutations. It means that generated results may vary on different steps. If it is not expected, please specify --disable_prompt_permutation in your benchmarking command to disable this behavior
+[ INFO ] [2][P0] Input token size: 128, Output size: 128, Infer count: 128, Tokenization Time: 1.03ms, Detokenization Time: 1.10ms, Generation Time: 5.16s, Latency: 40.27 ms/token
+[ INFO ] [2][P0] First token latency: 117.25 ms/token, other tokens latency: 39.66 ms/token, len of tokens: 128 * 1
+[ INFO ] [2][P0] First infer latency: 117.18 ms/infer, other infers latency: 39.46 ms/infer, inference count: 128
+[ INFO ] [2][P0] Result MD5:['2e4586491a5f7dba3dc83b1336805e74']
+[ INFO ] [2][P0] Generated: . However, as I started to work on it, I realized that the theme I had in mind was not the best fit for the game. So, I had to change the theme, and that was a big challenge. I had to redo a lot of the art, and the gameplay mechanics had to be adjusted to fit the new theme. It was a lot of work, but I'm glad I did it, because the game is much better now. Gameplay Mechanics The gameplay mechanics were a bit tricky to get right. I wanted the game to be challenging, but not too hard,
+[ INFO ] [2][P0] start: 2025-03-10T03:24:28.662718, end: 2025-03-10T03:24:33.821787
+[ WARNING ] Enabled input prompt permutations. It means that generated results may vary on different steps. If it is not expected, please specify --disable_prompt_permutation in your benchmarking command to disable this behavior
+[ INFO ] [3][P0] Input token size: 128, Output size: 128, Infer count: 128, Tokenization Time: 1.29ms, Detokenization Time: 0.73ms, Generation Time: 4.89s, Latency: 38.23 ms/token
+[ INFO ] [3][P0] First token latency: 119.79 ms/token, other tokens latency: 37.58 ms/token, len of tokens: 128 * 1
+[ INFO ] [3][P0] First infer latency: 119.72 ms/infer, other infers latency: 37.40 ms/infer, inference count: 128
+[ INFO ] [3][P0] Result MD5:['efa905dc560883aca6e863ebcb5362ea']
+[ INFO ] [3][P0] Generated: , but when it came to the theme, I was stuck. I had to think of something that would be unique, and that would make the game stand out. I wanted to make a game that would be different from all the other games out there, and that's when I came up with the idea of a food-based game. The game is called Survival of the Tastiest, and it's a game where you have to survive on a deserted island, using only food as a means of survival. The game is set on a deserted island, where you are stranded after a
+[ INFO ] [3][P0] start: 2025-03-10T03:24:33.822297, end: 2025-03-10T03:24:38.718365
+[ INFO ] <<< Warm-up iteration is excluded. >>>
+[ INFO ] [Total] Iterations: 3
+[ INFO ] [Average] P[0] Input token size: 128, 1st token latency: 113.27 ms/token, 2nd token latency: 39.03 ms/token, 2nd tokens throughput: 25.62 tokens/s
+/home/hoang-std/openvino_distributed/openvino.genai/tools/llm_bench/energy.py:10: DtypeWarning: Columns (2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,88,89,90,91,96,97,98,99,104,105,106,107,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135) have mixed types. Specify dtype option on import or set low_memory=False.
+  df = pd.read_csv("/home/hoang-std/pcm/build/bin/int8_llama-2-7b-chat-hf.csv")
+Total energy: 2876.8
+Power consumption: 575.36

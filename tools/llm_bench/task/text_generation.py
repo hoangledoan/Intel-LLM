@@ -19,7 +19,7 @@ import llm_bench_utils.output_json
 import llm_bench_utils.output_file
 import llm_bench_utils.gen_output_data as gen_output_data
 import llm_bench_utils.parse_json_data as parse_json_data
-
+import json
 FW_UTILS = {'pt': llm_bench_utils.pt_utils, 'ov': llm_bench_utils.ov_utils}
 
 DEFAULT_OUTPUT_TOKEN_SIZE = 512
@@ -519,10 +519,22 @@ def run_text_generation_benchmark(model_path, framework, device, tokens_len, str
                 p_idx = prompt_idx_list[idx]
                 if num == 0:
                     metrics_print.print_unicode(f'[warm-up][P{p_idx}] Input text: {input_text}', f'[warm-up][P{p_idx}] Unable print input text')
-                iter_timestamp[num][p_idx]['start'] = datetime.datetime.now().isoformat()
+                start_time = datetime.datetime.now()
                 text_gen_fn(input_text, num, model, tokenizer, args, iter_data_list, md5_list,
                             p_idx, bench_hook, tokens_len, streaming, model_precision, proc_id, mem_consumption)
-                iter_timestamp[num][p_idx]['end'] = datetime.datetime.now().isoformat()
+                end_time = datetime.datetime.now()
+                    
+                iter_timestamp[num][p_idx]['start'] = start_time.isoformat()
+                iter_timestamp[num][p_idx]['end'] = end_time.isoformat()
+                filtered_start_time = f"{start_time.hour:02d}:{start_time.minute:02d}:{start_time.second+1:02d}"
+                filtered_end_time = f"{end_time.hour:02d}:{end_time.minute:02d}:{end_time.second+1:02d}"
+                data = {
+                    "start_time": filtered_start_time,
+                    "end_time": filtered_end_time
+                }
+                with open('data.json', 'w') as json_file:
+                    json.dump(data, json_file, indent=4)
+
                 prefix = '[warm-up]' if num == 0 else '[{}]'.format(num)
                 log.info(f"{prefix}[P{p_idx}] start: {iter_timestamp[num][p_idx]['start']}, end: {iter_timestamp[num][p_idx]['end']}")
     else:

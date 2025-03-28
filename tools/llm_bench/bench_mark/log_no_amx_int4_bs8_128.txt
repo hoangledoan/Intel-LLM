@@ -1,0 +1,51 @@
+<frozen importlib.util>:208: DeprecationWarning: The `openvino.runtime` module is deprecated and will be removed in the 2026.0 release. Please replace `openvino.runtime` with `openvino`.
+/usr/lib/python3.12/multiprocessing/popen_fork.py:66: DeprecationWarning: This process (pid=114588) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  self.pid = os.fork()
+[ INFO ] ==SUCCESS FOUND==: use_case: text_gen, model_type: llama
+[ INFO ] OV Config={'INFERENCE_NUM_THREADS': 160, 'CACHE_DIR': ''}
+[ WARNING ] It is recommended to set the environment variable OMP_WAIT_POLICY to PASSIVE, so that OpenVINO inference can use all CPU resources without waiting.
+[ INFO ] The num_beams is 1, update Torch thread num from 80 to 16, avoid to use the CPU cores for OpenVINO inference.
+[ INFO ] Model path=models/llama-2-7b-chat-int4, openvino runtime version: 2025.0.0-17942-1f68be9f594-releases/2025/0
+[ INFO ] Selected OpenVINO GenAI for benchmarking
+[ INFO ] Pipeline initialization time: 1.36s
+[ INFO ] Numbeams: 1, benchmarking iter nums(exclude warm-up): 3, prompt nums: 1, prompt idx: [0]
+[ INFO ] [warm-up][P0] Input text: It's done, and submitted. You can play 'Survival of the Tastiest' on Android, and on the web. Playing on the web works, but you have to simulate multiple touch for table moving and that can be a bit confusing. There is a lot I'd like to talk about. I will go through every topic, insted of making the typical what went right/wrong list. Concept Working over the theme was probably one of the hardest tasks which I had to face. Originally, I had an idea of what kind of game I wanted to develop, gameplay wise
+[ WARNING ] Enabled input prompt permutations. It means that generated results may vary on different steps. If it is not expected, please specify --disable_prompt_permutation in your benchmarking command to disable this behavior
+[ INFO ] [warm-up] Batch_size=8, all input token size after padding: 128 * 8, all max_output_token_size: 128 * 8
+[ INFO ] [warm-up][P0] Input token size: 1024, Output size: 1024, Infer count: 128, Tokenization Time: 3.35ms, Detokenization Time: 1.56ms, Generation Time: 10.96s, Latency: 85.62 ms/8tokens
+[ INFO ] [warm-up][P0] First token latency: 31613.51 ms/8tokens, other tokens latency: 55.16 ms/8tokens, len of tokens: 128 * 8
+[ INFO ] [warm-up][P0] First infer latency: 3951.57 ms/infer, other infers latency: 54.71 ms/infer, inference count: 128
+[ INFO ] [warm-up][P0] Result MD5:['3d9bb81c04ee5e2ea9b15ab84ce11b55', '0c87c00232452e3945de02e742c4c155', '7a734fddc36f96306dde7233719ff2bf', '7a734fddc36f96306dde7233719ff2bf', '67c9de1b13209657107e79655b60f7cb', 'da96fea527a44e5afcdc913ce89db7b0', '7a734fddc36f96306dde7233719ff2bf', '787302b1997a7ac4374d33c27969b089']
+[ INFO ] [warm-up][P0] Generated: , but when it came to the theme, I was stuck. I had to think of something that would be unique, and that would fit the gameplay mechanics. I wanted to make a game that would be fun, and that would be different from the usual endless runner. I wanted to make a game that would be challenging, and that would make the player think. I wanted to make a game that would be funny, and that would make the player laugh. I wanted to make a game that would be addictive, and that would make the player want to play it over and over again. I wanted to
+[ INFO ] [warm-up][P0] start: 2025-03-10T01:36:40.340390, end: 2025-03-10T01:36:51.307493
+[ WARNING ] Enabled input prompt permutations. It means that generated results may vary on different steps. If it is not expected, please specify --disable_prompt_permutation in your benchmarking command to disable this behavior
+[ INFO ] [1] Batch_size=8, all input token size after padding: 128 * 8, all max_output_token_size: 128 * 8
+[ INFO ] [1][P0] Input token size: 1024, Output size: 1024, Infer count: 128, Tokenization Time: 0.98ms, Detokenization Time: 1.50ms, Generation Time: 7.96s, Latency: 62.18 ms/8tokens
+[ INFO ] [1][P0] First token latency: 10232.97 ms/8tokens, other tokens latency: 52.59 ms/8tokens, len of tokens: 128 * 8
+[ INFO ] [1][P0] First infer latency: 1279.01 ms/infer, other infers latency: 52.15 ms/infer, inference count: 128
+[ INFO ] [1][P0] Result MD5:['15ef4f3e48c517a82ba77b77b17e594e', 'b1be02220234eded087f93c607d55a90', 'd1df40d35a5686872781f3b10bffb35b', '5f0789e06ff349c96151bf84b37c101a', '15ef4f3e48c517a82ba77b77b17e594e', 'b1be02220234eded087f93c607d55a90', '4d1d17337a2708b88554729dc2ca7e78', 'daca4b34ef9cf0444810ba4d21d5d88c']
+[ INFO ] [1][P0] Generated: . However, as I started to work on it, I realized that the theme was not as clear cut as I thought it was. I had to go through a lot of iterations of the game, and a lot of trial and error, to get to the final product. The game started as a simple endless runner, where you would control a character that would run forever, and the goal was to collect as many coins as possible. However, as I worked on it, I realized that the gameplay was too simple, and that it lacked a certain something. I tried to add more complexity to the game, by adding
+[ INFO ] [1][P0] start: 2025-03-10T01:36:51.308146, end: 2025-03-10T01:36:59.271411
+[ WARNING ] Enabled input prompt permutations. It means that generated results may vary on different steps. If it is not expected, please specify --disable_prompt_permutation in your benchmarking command to disable this behavior
+[ INFO ] [2] Batch_size=8, all input token size after padding: 128 * 8, all max_output_token_size: 128 * 8
+[ INFO ] [2][P0] Input token size: 1024, Output size: 1024, Infer count: 128, Tokenization Time: 1.33ms, Detokenization Time: 1.13ms, Generation Time: 7.78s, Latency: 60.81 ms/8tokens
+[ INFO ] [2][P0] First token latency: 10445.69 ms/8tokens, other tokens latency: 51.00 ms/8tokens, len of tokens: 128 * 8
+[ INFO ] [2][P0] First infer latency: 1305.62 ms/infer, other infers latency: 50.54 ms/infer, inference count: 128
+[ INFO ] [2][P0] Result MD5:['6f1ca557165d2d0cfc2ec335281826a8', '34221ff8975c5f337f7f9cce6bc7989e', '162ceaa6d8d790d4b29428ed1963290d', '36d456148b43f062379be0b06283b7e7', '162ceaa6d8d790d4b29428ed1963290d', '85c9c1e8cc389fb836d89edaa1ccc15d', '162ceaa6d8d790d4b29428ed1963290d', '14dda26d29a03c7530a0f9045abfb24a']
+[ INFO ] [2][P0] Generated: . However, as I started to work on it, I realized that the theme I had chosen was not the best for the game I wanted to make. So, I had to change the theme, and that was a big challenge. I had to learn a lot of new things, like how to make a game that is not a simple puzzle game, but a more complex game with different mechanics. The game is about surviving on a deserted island, and it has a lot of different elements, like building shelter, finding food, and avoiding danger. The game has a lot of different mechanics, like the building
+[ INFO ] [2][P0] start: 2025-03-10T01:36:59.271720, end: 2025-03-10T01:37:07.058966
+[ WARNING ] Enabled input prompt permutations. It means that generated results may vary on different steps. If it is not expected, please specify --disable_prompt_permutation in your benchmarking command to disable this behavior
+[ INFO ] [3] Batch_size=8, all input token size after padding: 128 * 8, all max_output_token_size: 128 * 8
+[ INFO ] [3][P0] Input token size: 1024, Output size: 1024, Infer count: 128, Tokenization Time: 1.27ms, Detokenization Time: 1.19ms, Generation Time: 7.41s, Latency: 57.93 ms/8tokens
+[ INFO ] [3][P0] First token latency: 10725.28 ms/8tokens, other tokens latency: 47.82 ms/8tokens, len of tokens: 128 * 8
+[ INFO ] [3][P0] First infer latency: 1340.57 ms/infer, other infers latency: 47.30 ms/infer, inference count: 128
+[ INFO ] [3][P0] Result MD5:['efa905dc560883aca6e863ebcb5362ea', '1d701e68890ee6d38414ebe829df66ac', '1d701e68890ee6d38414ebe829df66ac', 'efa905dc560883aca6e863ebcb5362ea', 'daa95179fa03b30f545ddf51895972eb', 'efa905dc560883aca6e863ebcb5362ea', 'fd8bb1cc49d48f8714a5ee85270720e3', 'efa905dc560883aca6e863ebcb5362ea']
+[ INFO ] [3][P0] Generated: , but when it came to the theme, I was stuck. I had to think of something that would be unique, and that would make the game stand out. I wanted to make a game that would be different from all the other games out there, and that's when I came up with the idea of a food-based game. The game is called Survival of the Tastiest, and it's a game where you have to survive on a deserted island, using only food as a means of survival. The game is set on a deserted island, where you are stranded after a
+[ INFO ] [3][P0] start: 2025-03-10T01:37:07.059346, end: 2025-03-10T01:37:14.477767
+[ INFO ] <<< Warm-up iteration is excluded. >>>
+[ INFO ] [Total] Iterations: 3
+[ INFO ] [Average] P[0] Input token size: 1024, 1st token latency: 10467.98 ms/8tokens, 2nd token latency: 50.47 ms/8tokens, 2nd tokens throughput: 158.51 tokens/s
+/home/hoang-std/openvino_distributed/openvino.genai/tools/llm_bench/energy.py:10: DtypeWarning: Columns (2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,88,89,90,91,96,97,98,99,104,105,106,107,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135) have mixed types. Specify dtype option on import or set low_memory=False.
+  df = pd.read_csv("/home/hoang-std/pcm/build/bin/int8_llama-2-7b-chat-hf.csv")
+Total energy: 4141.2
+Power consumption: 591.6
